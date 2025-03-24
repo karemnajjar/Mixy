@@ -1,0 +1,27 @@
+mixy/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   └── register/
+│   │   ├── (main)/
+│   │   │   ├── feed/
+│   │   │   ├── explore/
+│   │   │   ├── profile/
+│   │   │   └── messages/
+│   │   ├── api/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── auth/
+│   │   ├── layout/
+│   │   ├── post/
+│   │   ├── profile/
+│   │   └── shared/
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   └── utils.ts
+│   └── types/
+└── prisma/
+    └── schema.prisma 

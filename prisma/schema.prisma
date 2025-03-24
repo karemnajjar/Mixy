@@ -1,0 +1,19 @@
+model UserLog {
+  id             String   @id @default(cuid())
+  userId         String
+  email          String
+  username       String
+  name           String
+  registrationIp String
+  userAgent      String
+  createdAt      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+}
+
+model User {
+  id               String    @id @default(cuid())
+  // ... other user fields ...
+  userLogs         UserLog[]
+} 
