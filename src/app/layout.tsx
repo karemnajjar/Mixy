@@ -1,26 +1,21 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
+import './globals.css'
+import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
+  title: 'Mixy',
+  description: 'Connect and share with friends',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white`}>
-        <div className="min-h-screen">
-          <nav className="bg-primary-500 text-white">
-            {/* Navigation content */}
-          </nav>
-          
-          <main className="bg-background-primary">
-            {children}
-          </main>
-        </div>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 } 
